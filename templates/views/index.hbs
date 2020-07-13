@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Weather</title>
+        <link rel="icon" href="/img/weather.png">
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+    <body>
+        <div class="main-content">
+            {{>header}}
+            <p>A simple weather apps provided by practice.</p>
+            <form>
+                <input placeholder="Location"/>
+                <button>Search</button>
+            </form>
+            <div class="winfo">
+                <img class="wicon" src="">
+                <div class="wmsg">
+                    <p id="msg1"></p>
+                    <p id="msg2"></p>
+                </div>
+            </div>
+        </div>
+        {{>footer}}
+        <script src="js/app.js"></script>
+    </body>
+</html>
